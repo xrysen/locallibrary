@@ -56,7 +56,7 @@ class BookInstance(models.Model):
     ordering = ['due_back']
 
   def __str__(self):
-    return f'{self.id} ({self.book_title})'
+    return f'{self.id} ({self.book.title})'
 
 class Author(models.Model):
   first_name = models.CharField(max_length=100)
