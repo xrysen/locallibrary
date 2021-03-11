@@ -7,11 +7,11 @@ class Genre(models.Model):
   def __str__(self):
     return self.name
 
- class Language(models.Model):
-   name = models.CharField(max_length=100, help_text="Enter natural language for the book")
+class Language(models.Model):
+  name = models.CharField(max_length=100, help_text="Enter natural language for the book")
 
-   def __str__(self):
-     return self.name
+  def __str__(self):
+    return self.name
 
 from django.urls import reverse
 
